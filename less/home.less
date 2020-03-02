@@ -1,0 +1,66 @@
+/*
+<section class="home-body">
+<div class="main-logo">
+  <img src="src/img/logo_lg.png">
+</div>
+<div class="home-content">
+  <h2 class="title-home-intro"> Explore. Discover. Create. Share.</h2>
+  <h5 class="home-intro">A place to keep your family's most treasured recipes as well as finding some new ones and making them your own! Explore Shared Recipes. Keep your recipes in your own secret family recipe book or share them with the public or just keep it in the family. Discover a new recipe and make it your own. You can copy a recipe and change it to make it yours.  This is your <span>Secret Family Recipe Cookbook</span> Welcome Home!</h5>
+</div>
+<div class="home-buttons">
+  <button class="home-btn">Sign Up</button>
+  <button class="home-btn">Login</button>
+</div>
+</section>
+*/
+
+.home-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+
+    .main-logo {
+        display: flex;
+        justify-content: center;
+        width: 60%;
+
+        img {
+            width: 50%;
+        }
+    }
+
+    .home-content {
+        text-align: center;
+        width: 95%;
+
+        .title-home-intro {
+            color: @green;
+            font-family: @title;
+            margin-top: 20px;
+        }
+
+        .home-intro {
+            margin-top: 1%;
+            display: inline-flex;
+            width: 50%;
+            line-height: 160%;
+            font-family: @copy;
+            font-size: 2rem;
+ 
+        }
+
+
+    }
+
+    .home-buttons {
+        display: flex;
+        width: 40%;
+        justify-content: center;
+        
+        button {
+            margin: 2% 8%;
+        }
+    }
+}
+

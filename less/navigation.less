@@ -1,0 +1,54 @@
+
+/* Nav Bar */
+
+.header {
+    .flex();
+}
+
+
+nav {
+
+    .flex();
+    flex-direction: row;
+    width: 100%;
+    padding: .5%;
+    box-shadow: 10px 10px 5px grey;
+    
+
+    .logo{  
+        width: 10%;
+    }
+
+    .links {
+        .flex();
+        width: 60%;
+        font-size: 1.5rem;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a {
+         text-decoration: none; 
+         color: @green;  
+        }
+        
+   
+    }
+
+
+    .search-box{
+        .flex();
+        width: 30%;
+        padding-left: 5%;
+        justify-content: flex-end;
+        margin-top: 1%;
+
+        input {
+            height: 60%;
+            width: 50%;
+        }     
+       
+      }
+
+
+}
+

@@ -1,0 +1,317 @@
+/* examples
+@font-color: @shark;
+@button-bg: @eastern-blue;
+@main-bg:  @white;
+@navigation-border: @silver;
+@footer-bg: @sandy-beach;
+*/
+/* examples
+@silver: #C0C0C0;
+@shark: #212529;
+@eastern-blue: #17A2B8;
+@sandy-beach: #FFEBCD;
+@teal: #238080; 
+*/
+@font-face {
+  font-family: 'Simonetta';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Simonetta Regular'), local('Simonetta-Regular'), url(https://fonts.gstatic.com/s/simonetta/v10/x3dickHVYrCU5BU15c4xe_oG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spartan/v1/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrGFuV6JABE.ttf) format('truetype');
+}
+/* examples
+@border: 2px dashed gray;
+
+//mobile
+@phone:~"(max-width: 500px)";
+*/
+/*
+.btnSignUp (@justify, @align){
+	display: flex;
+	justify-content: @justify;
+    align-items: @align;
+    background-color: @teal;
+    color: @white;
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 5% 10%;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+.links () {
+    text-decoration: none;
+    color: black;
+}
+
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 1px solid orangered;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Spartan', serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Simonetha', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+/* Nav Bar */
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+}
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  padding: 0.5%;
+  box-shadow: 10px 10px 5px grey;
+}
+nav .logo {
+  width: 10%;
+}
+nav .links {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 60%;
+  font-size: 1.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav .links a {
+  text-decoration: none;
+  color: #628c3d;
+}
+nav .search-box {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 30%;
+  padding-left: 5%;
+  justify-content: flex-end;
+  margin-top: 1%;
+}
+nav .search-box input {
+  height: 60%;
+  width: 50%;
+}
+/*
+<section class="home-body">
+<div class="main-logo">
+  <img src="src/img/logo_lg.png">
+</div>
+<div class="home-content">
+  <h2 class="title-home-intro"> Explore. Discover. Create. Share.</h2>
+  <h5 class="home-intro">A place to keep your family's most treasured recipes as well as finding some new ones and making them your own! Explore Shared Recipes. Keep your recipes in your own secret family recipe book or share them with the public or just keep it in the family. Discover a new recipe and make it your own. You can copy a recipe and change it to make it yours.  This is your <span>Secret Family Recipe Cookbook</span> Welcome Home!</h5>
+</div>
+<div class="home-buttons">
+  <button class="home-btn">Sign Up</button>
+  <button class="home-btn">Login</button>
+</div>
+</section>
+*/
+.home-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5%;
+}
+.home-body .main-logo {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+.home-body .main-logo img {
+  width: 50%;
+}
+.home-body .home-content {
+  text-align: center;
+  width: 95%;
+}
+.home-body .home-content .title-home-intro {
+  color: #628c3d;
+  font-family: 'Simonetta', serif;
+  margin-top: 20px;
+}
+.home-body .home-content .home-intro {
+  margin-top: 1%;
+  display: inline-flex;
+  width: 50%;
+  line-height: 160%;
+  font-family: 'Spartan', sans-serif;
+  font-size: 2rem;
+}
+.home-body .home-buttons {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+}
+.home-body .home-buttons button {
+  margin: 2% 8%;
+}
